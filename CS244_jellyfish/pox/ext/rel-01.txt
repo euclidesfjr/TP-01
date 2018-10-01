@@ -1,0 +1,73 @@
+number_of_servers_in_rack = 2
+number_of_switch_ports = 5
+RRG has 10 nodes with degree 3 and 15 edges
+net started
+('10.0.0.1', <CPULimitedHost h0: h0-eth0:10.0.0.1 pid=4781> )
+('10.0.0.2', <CPULimitedHost h1: h1-eth0:10.0.0.2 pid=4788> )
+('10.0.0.3', <CPULimitedHost h2: h2-eth0:10.0.0.3 pid=4792> )
+('10.0.0.4', <CPULimitedHost h3: h3-eth0:10.0.0.4 pid=4796> )
+('10.0.0.5', <CPULimitedHost h4: h4-eth0:10.0.0.5 pid=4800> )
+('10.0.0.6', <CPULimitedHost h5: h5-eth0:10.0.0.6 pid=4804> )
+('10.0.0.7', <CPULimitedHost h6: h6-eth0:10.0.0.7 pid=4808> )
+('10.0.0.8', <CPULimitedHost h7: h7-eth0:10.0.0.8 pid=4812> )
+('10.0.0.9', <CPULimitedHost h8: h8-eth0:10.0.0.9 pid=4817> )
+('10.0.0.10', <CPULimitedHost h9: h9-eth0:10.0.0.10 pid=4821> )
+('10.0.0.11', <CPULimitedHost h10: h10-eth0:10.0.0.11 pid=4825> )
+('10.0.0.12', <CPULimitedHost h11: h11-eth0:10.0.0.12 pid=4829> )
+('10.0.0.13', <CPULimitedHost h12: h12-eth0:10.0.0.13 pid=4833> )
+('10.0.0.14', <CPULimitedHost h13: h13-eth0:10.0.0.14 pid=4837> )
+('10.0.0.15', <CPULimitedHost h14: h14-eth0:10.0.0.15 pid=4841> )
+('10.0.0.16', <CPULimitedHost h15: h15-eth0:10.0.0.16 pid=4845> )
+('10.0.0.17', <CPULimitedHost h16: h16-eth0:10.0.0.17 pid=4849> )
+('10.0.0.18', <CPULimitedHost h17: h17-eth0:10.0.0.18 pid=4853> )
+('10.0.0.19', <CPULimitedHost h18: h18-eth0:10.0.0.19 pid=4857> )
+('10.0.0.20', <CPULimitedHost h19: h19-eth0:10.0.0.20 pid=4861> )
+sender:10.0.0.1 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.19 -P 1 > ./h0.out 2> ./h0.err
+sender:10.0.0.2 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.3 -P 1 > ./h1.out 2> ./h1.err
+sender:10.0.0.3 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.12 -P 1 > ./h2.out 2> ./h2.err
+sender:10.0.0.4 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.5 -P 1 > ./h3.out 2> ./h3.err
+sender:10.0.0.5 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.18 -P 1 > ./h4.out 2> ./h4.err
+sender:10.0.0.6 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.8 -P 1 > ./h5.out 2> ./h5.err
+sender:10.0.0.7 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.6 -P 1 > ./h6.out 2> ./h6.err
+sender:10.0.0.8 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.2 -P 1 > ./h7.out 2> ./h7.err
+sender:10.0.0.9 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.13 -P 1 > ./h8.out 2> ./h8.err
+sender:10.0.0.10 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.14 -P 1 > ./h9.out 2> ./h9.err
+sender:10.0.0.11 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.10 -P 1 > ./h10.out 2> ./h10.err
+sender:10.0.0.12 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.4 -P 1 > ./h11.out 2> ./h11.err
+sender:10.0.0.13 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.1 -P 1 > ./h12.out 2> ./h12.err
+sender:10.0.0.14 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.7 -P 1 > ./h13.out 2> ./h13.err
+sender:10.0.0.15 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.17 -P 1 > ./h14.out 2> ./h14.err
+sender:10.0.0.16 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.15 -P 1 > ./h15.out 2> ./h15.err
+sender:10.0.0.17 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.16 -P 1 > ./h16.out 2> ./h16.err
+sender:10.0.0.18 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.20 -P 1 > ./h17.out 2> ./h17.err
+sender:10.0.0.19 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.11 -P 1 > ./h18.out 2> ./h18.err
+sender:10.0.0.20 cmd:sleep 1; iperf -i 1 -t 20 -c 10.0.0.9 -P 1 > ./h19.out 2> ./h19.err
+('./h4.out', 3.21)
+('./h15.out', 2.62)
+('./h19.out', 94.0)
+('./h7.out', 2.62)
+('./h8.out', 93.8)
+('./h2.out', 93.8)
+('./h12.out', 60.5)
+('./h16.out', 85.7)
+('./h5.out', 94.4)
+('./h9.out', 3.13)
+('./h0.out', 93.0)
+('./h13.out', 91.5)
+('./h17.out', 34.9)
+('./h3.out', 2.66)
+('./h10.out', 2.51)
+('./h6.out', 92.1)
+('./h14.out', 95.0)
+('./h18.out', 69.3)
+('./h1.out', 94.0)
+('./h11.out', 3.14)
+average bandwidth between all pairs = 55.5945
+mininet> Traceback (most recent call last):
+  File "build_topology.py", line 223, in <module>
+    CLI(net)
+  File "build/bdist.linux-x86_64/egg/mininet/cli.py", line 68, in __init__
+  File "build/bdist.linux-x86_64/egg/mininet/cli.py", line 103, in run
+  File "/usr/lib/python2.7/cmd.py", line 130, in cmdloop
+    line = raw_input(self.prompt)
+IOError: [Errno 9] Bad file descriptor

@@ -1,0 +1,101 @@
+=======================================================
+#### * * * SEM MPTCP #### r_method = ecmp8, fluxos = 1, servidores = 10 ####################
+ 
+######################################### Parameters #########################################
+iperf_time = 20 # seconds
+switch_switch_link_bw = 400 # Mbps
+switch_host_link_bw = 100 # Mbps
+r_method = '8_shortest' # '8_shortest', 'ecmp64' or '8_shortest'
+number_of_tcp_flows = 1 # should be 1 or 8
+nx_topology = NXTopology(number_of_servers=10, switch_graph_degree=3, number_of_links=15)
+##############################################################################################
+number_of_servers_in_rack = 1
+number_of_switch_ports = 4
+RRG has 10 nodes with degree 3 and 15 edges
+average bandwidth between all pairs = 94.7
+=======================================================
+#### * * * SEM MPTCP #### r_method = ecmp8, fluxos = 1, servidores = 10 ####################
+ 
+######################################### Parameters #########################################
+iperf_time = 20 # seconds
+switch_switch_link_bw = 400 # Mbps
+switch_host_link_bw = 100 # Mbps
+r_method = '8_shortest' # '8_shortest', 'ecmp64' or '8_shortest'
+number_of_tcp_flows = 1 # should be 1 or 8
+nx_topology = NXTopology(number_of_servers=10, switch_graph_degree=3, number_of_links=15)
+##############################################################################################
+number_of_servers_in_rack = 1
+number_of_switch_ports = 4
+RRG has 10 nodes with degree 3 and 15 edges
+average bandwidth between all pairs = 83.14
+=======================================================
+#### * * * SEM MPTCP #### r_method = 8_shortest, fluxos = 1, servidores = 10 ####################
+ 
+######################################### Parameters #########################################
+iperf_time = 20 # seconds
+switch_switch_link_bw = 400 # Mbps
+switch_host_link_bw = 100 # Mbps
+r_method = '8_shortest' # '8_shortest', 'ecmp64' or '8_shortest'
+number_of_tcp_flows = 1 # should be 1 or 8
+nx_topology = NXTopology(number_of_servers=10, switch_graph_degree=3, number_of_links=15)
+##############################################################################################
+number_of_servers_in_rack = 1
+number_of_switch_ports = 4
+RRG has 10 nodes with degree 3 and 15 edges
+average bandwidth between all pairs = 76.13
+=======================================================
+#### * * * SEM MPTCP #### r_method = 8_shortest, fluxos = 1, servidores = 10 ####################
+ 
+######################################### Parameters #########################################
+iperf_time = 20 # seconds
+switch_switch_link_bw = 400 # Mbps
+switch_host_link_bw = 100 # Mbps
+r_method = '8_shortest' # '8_shortest', 'ecmp64' or '8_shortest'
+number_of_tcp_flows = 1 # should be 1 or 8
+nx_topology = NXTopology(number_of_servers=10, switch_graph_degree=3, number_of_links=15)
+##############################################################################################
+number_of_servers_in_rack = 1
+number_of_switch_ports = 4
+RRG has 10 nodes with degree 3 and 15 edges
+average bandwidth between all pairs = 85.28
+=======================================================
+#### * * * COM MPTCP #### r_method = ecmp8, fluxos = 1, servidores = 10 ####################
+ 
+######################################### Parameters #########################################
+iperf_time = 20 # seconds
+switch_switch_link_bw = 400 # Mbps
+switch_host_link_bw = 100 # Mbps
+r_method = 'ecmp8' # '8_shortest', 'ecmp64' or '8_shortest'
+number_of_tcp_flows = 1 # should be 1 or 8
+nx_topology = NXTopology(number_of_servers=10, switch_graph_degree=3, number_of_links=15)
+##############################################################################################
+number_of_servers_in_rack = 1
+number_of_switch_ports = 4
+RRG has 10 nodes with degree 3 and 15 edges
+average bandwidth between all pairs = 86.39
+=======================================================
+#### * * * COM MPTCP #### r_method = ecmp8, fluxos = 1, servidores = 10 ####################
+ 
+######################################### Parameters #########################################
+iperf_time = 20 # seconds
+switch_switch_link_bw = 400 # Mbps
+switch_host_link_bw = 100 # Mbps
+r_method = '8_shortest' # '8_shortest', 'ecmp64' or '8_shortest'
+number_of_tcp_flows = 1 # should be 1 or 8
+nx_topology = NXTopology(number_of_servers=10, switch_graph_degree=3, number_of_links=15)
+##############################################################################################
+number_of_servers_in_rack = 1
+number_of_switch_ports = 4
+RRG has 10 nodes with degree 3 and 15 edges
+average bandwidth between all pairs = 47.37
+ 
+=======================================================================
+---------------- TABELA DOS RESULTADOS EXTRAÍDOS OS EXPERIMENTOS ------
+-------------------------------------------------------------
+|CONGESTION      | FAT-TREE (10 SVRS)|  JELLYFISH (10 SVRS)  |
+|CONTROL         |        ECMP       |ECMP  |8-SHORTEST PATHS|
+|TCP 1 FLOW      |                   |94.7%|    76.13%     |
+|TCP 8 FLOWS     |                   |83.14%|   85.28%       |
+|MPTCP 8 SUBFLOWS|                   |86.39%|   47.37%       |
+-------------------------------------------------------------
+Execuções dos experimentos realizadas com Sucesso!
